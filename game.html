@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Найди отличие</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="screen">
+    <!-- Текущий уровень -->
+    <div class="game-level">Уровень: 1</div>
+
+    <!-- Счетчик различий -->
+    <div class="game-header">
+      Найдено различий: <span id="differencesFound">0</span>/5
+    </div>
+
+    <!-- Игровое поле -->
+    <div class="game-images">
+      <img src="images/image1.png" alt="Left Image">
+      <div class="image-container">
+        <img src="images/image1.png" alt="Right Image" id="rightImage">
+        <!-- Рандомные области -->
+        <div id="differenceAreaContainer"></div>
+      </div>
+    </div>
+
+    <!-- Кнопки управления -->
+    <div class="game-buttons">
+      <button id="restartButton">Начать сначала</button>
+      <button id="menuButton">Вернуться в главное меню</button>
+    </div>
+	<audio id="wrong-sound" src="sounds/wrong1.mp3" preload="auto"></audio>
+<audio id="success-sound" src="sounds/success1.wav" preload="auto"></audio>
+  <audio id="backgroundMusic" loop></audio>
+
+  </div>
+  
+  <script src="js/game.js"></script>
+</body>
+</html>
