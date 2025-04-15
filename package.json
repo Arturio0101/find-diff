@@ -1,0 +1,17 @@
+{
+    "name": "test-website",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node ./index.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2",
+        "http": "^0.0.1-security"
+    },
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {},
+    "description": ""
+}
